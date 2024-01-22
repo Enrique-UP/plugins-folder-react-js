@@ -1,0 +1,14 @@
+.trans{transition: 0.3s linear;-webkit-transition: 0.3s linear;-moz-transition: 0.3s linear;}
+.whf{width:100%;height:100%;}
+.mb{
+    [class*=col-]{margin-bottom:30px;}
+    .mb{margin-bottom: 0;}
+    &{
+        @media (max-width:575px){
+            &{
+                [class*=col-]{margin-bottom:10px;}
+                .mb{margin-bottom: 0;}
+            }
+        }
+    }
+}

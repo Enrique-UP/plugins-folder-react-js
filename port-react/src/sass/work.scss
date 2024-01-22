@@ -1,0 +1,86 @@
+@import "./common/mixin.scss";
+.work{
+    .workArea{display: flex;flex-direction: column;
+        .image{display: flex;flex-direction: column;height:350px;overflow: hidden;border:1px solid var(--bk2);border-bottom: none;position:relative;background:var(--g1);
+            > img{height: 100%;object-fit: cover;}
+            .date, .detail, .category, .details{position: absolute;}
+            .date{top:30px;left:0;background: var(--b1);}
+            .detail{top:30px;right:0;background: var(--b3);cursor: pointer;}
+            .date, .detail{padding-top: 7px;padding-bottom: 7px;}
+            .date, .detail, .category{padding-left:10px;padding-right:10px;color:white;line-height: 1;@extend .trans;}
+            .category{bottom:0;left:0;right:0;margin:auto;background: var(--head);width:min-content;padding-top: 6px;padding-bottom: 6px;white-space: nowrap;}
+            .details{top:100%;left:0;background: var(--g1);width:100%;height:100%;display: flex;flex-direction:column;@extend .trans;
+                .icon{position:absolute;top:0;right:0;cursor: pointer;width: 50px;height: 50px;background: var(--b1);justify-content: center;display: flex;align-items: center;color: white;}
+                .head{padding:0 15px;font-weight: 900;font-size:20px;display: flex;flex-shrink: 0;border-bottom:1px solid var(--bk2);color:var(--bk2);line-height: 1;height:51px;align-items: center;background: var(--b10);}
+                .about{width:100%;display:flex;text-align:justify;overflow-y: auto;height: 100%;padding:10px 15px;flex-direction:column;
+                    i{height:10px;}
+                }
+                .default{
+                    &::before{content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni corrupti quibusdam modi saepe! Excepturi ipsum temporibus sequi, repellat culpa eligendi adipisci minima, ducimus rerum omnis esse labore magni dolores non error veniam aliquam animi suscipit reiciendis repellendus dolorum accusantium alias deserunt quasi! Cumque temporibus impedit exercitationem perferendis numquam nostrum, quas et placeat maxime doloremque. Nam culpa, debitis magnam cum, vel magni nemo recusandae quia quidem necessitatibus nisi ratione voluptatibus eum tempore, repudiandae officiis similique explicabo. Hic, beatae reprehenderit.";}
+                }
+                .default1{
+                    &::before{content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni corrupti quibusdam modi saepe! Excepturi ipsum temporibus sequi, repellat culpa eligendi adipisci minima, ducimus rerum omnis esse labore magni dolores non error veniam aliquam animi suscipit reiciendis repellendus dolorum accusantium alias deserunt quasi!";}
+                }
+            }
+        }
+        .more{background:var(--b10);display:flex;justify-content:space-between;color:white;align-items:center;overflow: hidden;
+            height: 50px;
+            .icon{width: 50px;height: 100%;display: flex;align-items: center;justify-content: center;background: var(--b2);color: white;cursor: pointer;flex-shrink: 0;@extend .trans;
+                &.stop{display: none;}
+            }
+            .name{font-weight: 700;width: 100%;text-align: center;padding: 0 10px;word-break: break-all;line-height: 1;color:var(--bk2);}
+        }
+        &.active{
+            .image{
+                .details{top:0;}
+                .date{left:-100px;}
+                .detail{right:-100px;}
+                .category{bottom:-100px;}
+            }
+        }
+        &.active1{
+            .image{
+                .date{left:-100px;}
+                .detail{right:-100px;}
+                .category{bottom:-50px;}
+            }
+            .more{
+                .icon{
+                    &.view{display: none;}
+                    &.stop{display: flex;background:var(--b1);}
+                }
+            }
+        }
+    }
+}
+.fixElement{width:100%;height:100%;background: rgba(0,0,0,.7);position: fixed;top: 0;left: 0;z-index: 999;@extend .center;display:none;overflow:auto;
+    .centerArea{width:300px;display: flex;flex-direction: column;
+        .icon{background:var(--b1);width:40px;height:40px;@extend .center;color:white;font-size: 20px;align-self: flex-end;cursor: pointer;}
+        .imageArea{width:100%;max-height: 600px;overflow-y:auto;border:10px solid var(--bk3);display:flex;flex-direction:column;
+            img{width:100%;}
+        }
+    }
+    &{
+        @media (min-width:768px) and (max-width:991px){
+            &{
+                .centerArea{
+                    .imageArea{max-height: 550px;}
+                }
+            }
+        }
+        @media (min-width:576px) and (max-width:767px){
+            &{
+                .centerArea{
+                    .imageArea{max-height: 500px;}
+                }
+            }
+        }
+        @media (max-width:575px){
+            &{
+                .centerArea{
+                    .imageArea{max-height: 400px;}
+                }
+            }
+        }
+    }
+}

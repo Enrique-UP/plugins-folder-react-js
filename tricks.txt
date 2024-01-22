@@ -1,0 +1,198 @@
+===========================================
+in window server web.config
+in apache server .htaccess
+===========================================
+https://www.youtube.com/watch?v=RUku45vpSDU
+===========================================
+for react 
+npx create-react-app app
+===========================================
+https://www.geeksforgeeks.org/what-is-react-router-dom/
+
+npm i react-router-dom@5.2.0
+npm uninstall react-router-dom
+===========================================
+npm start
+===========================================
+npm install --save-dev @fortawesome/fontawesome-free
+npm un --save-dev @fortawesome/fontawesome-free
+npm i font-awesome@4.7
+npm i bootstrap@5.0.0-alpha1
+
+for code
+use only this bootstarap react
+https://react-bootstrap.github.io/components/accordion/
+===========================================
+$ npm i aos --save
+npm install aos --save
+https://www.youtube.com/watch?v=JcHLxzrsRS4
+AOS.init({
+once: true,
+duration: 1200,
+});
+===========================================
+https://therichpost.com/how-to-add-wowjs-in-reactjs/
+npm install wowjs
+wow animate animation
+===========================================
+npm i or npm install
+ctrl c= exit existing terminate
+ctrl backtick = to open terminal
+===========================================
+text slider:- npm i react-simple-typewriter
+https://www.npmjs.com/package/react-simple-typewriter
+===========================================
+image gallery:- npm i simple-react-lightbox
+https://simple-react-lightbox.dev/documentation/basic-usage
+https://www.youtube.com/watch?v=OzISPBpzwkI
+https://www.npmjs.com/package/simple-react-lightbox#getting-started
+
+If get error then delete webpack lock file then run.
+npm install node-polyfill-webpack-plugin --save-dev // for working this will not show in webpack config
+
+solve issue
+https://www.youtube.com/watch?v=u1PPNIBvQjk
+npm i process
+===========================================
+owl carousel
+https://therichpost.com/reactjs-owl-carousel-working-tutorial/
+https://stackoverflow.com/questions/46088145/how-to-make-owl-carousel-responsive-in-react
+
+npm install --save react-owl-carousel
+===========================================
+js toggle class
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_class
+===========================================
+ 
+===========================================
+react page progress
+https://www.npmjs.com/package/react-page-progress
+https://nomangul.github.io/react-page-progress/
+https://www.youtube.com/watch?v=X1PI52QLanE
+===========================================
+scroll top
+https://www.geeksforgeeks.org/how-to-create-a-scroll-to-top-button-in-react-js/?ref=gcse
+===========================================
+<form action="" className="form" onSubmit={(e) => {handleSubmit(e); sendEmail(e);}} >
+===========================================
+
+===========================================
+npm cache clean --force
+
+
+
+===========================================
+react material ui
+https://www.youtube.com/watch?v=o73KY8M6F1M&list=PLwGdqUZWnOp3aROg4wypcRhZqJG3ajZWJ&index=47
+===========================================
+for js
+https://www.youtube.com/watch?v=PODgPW-hbfU
+===========================================
+npm i create-react-app
+npm audit fix
+npm audit fix --force
+npm i --force
+===========================================
+if react new folder is not creating.
+check "react-scripts": "5.0.0", from package.
+or check version from then npm.
+npm install create-react-app@5.0.0
+npx create-react-app my-app
+cd my-app
+npm start
+===========================================
+npm install -g create-react-app
+npx create-react-app myapp
+============================================
+npm install create-react-app@4.0.3
+npm i npm@4.0.3
+===========================================
+npm install --save react-helmet
+===========================================
+npm run build (for optimize after that live)
+===========================================
+React Developer Tools (add in our google extension for components)
+===========================================
+
+=============================================================================
+================================Add js in react==============================start
+import React from "react";
+import { useEffect } from "react";
+
+const AboutUs = () => {
+    useEffect(() => {
+        document.querySelectorAll("main .fw").forEach(function (e) {
+            e.parentElement.classList.add("fwParent");
+        });
+        document.querySelectorAll(".container .row [class*=col-] [class*=col-]").forEach(function (e) {
+            e.parentElement.closest("[class*=col-]").style.marginBottom = 0;
+          });
+    }, []);
+    return(
+        <>
+            <div>Lorem</div>
+        </>
+    )
+}
+export default AboutUs;
+================================Add js in react==============================end
+================================Inline js in react==============================start
+<div className="col-xs-12" onClick={(e)=>e.target.closest(".container").classList.add("active")}>Click here...</div>
+================================Inline js in react==============================end
+================================counter in react==============================start
+npm i react-countup@6.1.1
+npm i react-intersection-observer@8.33.1
+================================counter in react==============================end
+================================innerHTML in react==============================start
+//npm i html-to-react
+
+import { Parser } from 'html-to-react'
+const rawHTML = `
+<div>
+  <h1>The Second Example</h1>
+  <p>The <strong>rat</strong> hates the <strong>cat</strong></p>
+  <p><i>This is something special</i></p>
+  <hr/>  
+  <h4>Just Another Heading</h4>
+</div>
+`;
+
+const App = () => {
+    return (
+        <div style={container}>
+            {Parser().parse(rawHTML)}
+        </div>
+    );
+};
+
+// Styling
+const container = {
+    width: 500,
+    margin: 'auto'
+};
+
+export default App;
+================================innerHTML in react==============================end
+================================inline javascript ===============================start
+<a onClick={() => window.open('https://react.dev/')}></a>
+<a onClick={(e) => {e.target.closest(".container").classList.toggle("active")}}>Link</a>
+================================inline javascript===============================end
+=============================================================================
+
+=============================================================================
+
+=============================================================================
+
+=============================================================================
+
+=============================================================================
+
+=============================================================================
+
+=============================================================================
+
+=============================================================================
+
+=============================================================================
+
+=============================================================================

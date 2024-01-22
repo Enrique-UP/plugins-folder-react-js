@@ -1,0 +1,50 @@
+@charset "utf-8";
+*{padding:0;margin:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+body{font-family:Arial, Helvetica, sans-serif;font-size:14px;background:#f9f9f9;}
+a:hover, a:active, a:focus{text-decoration: none !important;}
+h1, h2, h3, h4, h5, h6{width:100%;float:left;text-align: center;font-weight: bold !important;margin:0 0 30px !important;}
+.clear{clear:both;padding:0;}
+main{width:100%;float:left;background:#fff;}
+main > *{width:100%;float:left;}
+
+
+
+main header{padding-top:15px;}
+.logo_area{width:auto;float:left;margin-bottom: 15px;}
+.logo_area > img{width:auto;float:left;}
+main header nav{width:auto;float:right;margin-bottom: 15px;position: relative;}
+main header nav .fa-bars{width:auto;float:right;font-size:24px;display: none;color:#000;}
+main header nav .navigation{width:100%;float:left;padding:26px 0;margin:0;}
+main header nav .navigation > li{width:auto;float:left;list-style: none;margin-left: 40px;}
+main header nav .navigation > li:first-child{margin-left: 0;}
+main header nav .navigation > li > a{display: block;color:#000;font-size:16px;}
+main header nav .navigation > li > a:hover{}
+
+main section{background:#ccc;padding:80px 0 50px;}
+main section.white{background: #fff;}
+main section figure{width:100%;float:left;margin-bottom: 30px;}
+main section figure > *{width:100%;float:left;}
+main section figure > figcaption{background: #fff;padding: 15px;font-size: 16px;font-weight: bold;}
+main section .inner{line-height: 1.7;}
+main section .inner > *:last-child{margin-bottom: 30px;}
+main section .inner .text-center a{color:#333;}
+
+
+main footer{background: #333;padding:50px 0 20px;}
+main footer .logo_area{margin-bottom: 30px;}
+main footer p{width:100%;float:left;font-weight: bold;color:#fff;font-size:20px;}
+main footer .links{width:100%;float:left;margin-bottom: 20px;}
+main footer .links > a{width:auto;float:left;clear: both;color:#fff;margin-bottom: 10px;}
+
+main .copyright{background:#000;text-align: center;color:#fff;padding:12px 0;}
+
+@media (max-width:991px)
+{
+    main header nav .fa-bars{display: block;margin: 25px 0 0;}
+    main header nav .navigation{position: absolute;top:90px;right:0;width: 135px;background: #f5f5f5;padding: 15px 15px 5px;display: none;}
+    main header nav .navigation > li{width:100%;margin-left: 0;margin-bottom: 10px;}
+}
+@media (max-width:767px)
+{
+    main section{padding:60px 0 30px;}
+}

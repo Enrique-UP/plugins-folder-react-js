@@ -1,0 +1,55 @@
+@import "./common/mixin.scss";
+.welcome{background: var(--b3);
+    .fw{flex-direction: column;color:white;padding:60px 0;display:flex;
+        &::before{width:0;height:0;position:absolute;top:-179px;left:0;border-left:230px solid transparent;border-right:230px solid transparent;border-bottom:180px solid var(--b3);content:"";z-index: 1;}
+        .head{font-size:120px;font-weight: 900;margin-bottom: 30px;line-height: 1.1;white-space: nowrap;
+            > span{font-size: 100px;display: block;}
+            ~ *{line-height: 1.7;font-size:24px;}
+        }
+    }
+    &{
+        @media (min-width:992px) and (max-width:1199px){
+            &{
+                .fw{
+                    &::before{top:-149px;border-left-width: 200px;border-right-width: 200px;border-bottom-width: 150px;}
+                    .head{font-size:110px;
+                        > span{font-size: 90px;}
+                    }                        
+                }
+            }
+        }
+        @media (min-width:768px) and (max-width:991px){
+            &{
+                .fw{
+                    &::before{top:-99px;border-left-width: 150px;border-right-width: 150px;border-bottom-width: 100px;}
+                    .head{font-size:100px;
+                        > span{font-size: 80px;}
+                        ~ *{font-size: 16px;}
+                    }
+                }
+            }    
+        }
+        @media (min-width:576px) and (max-width:767px){
+            &{
+                .fw{padding:50px 0;
+                    &::before{top:-119px;border-left-width: 110px;border-right-width: 110px;border-bottom-width: 120px;}
+                    .head{font-size:80px;margin-bottom:20px;
+                        > span{font-size: 65px;}
+                        ~ *{font-size: 16px;}
+                    }
+                }
+            }    
+        }
+        @media (max-width:575px){
+            &{
+                .fw{padding:30px 0;
+                    &::before{top: -49px;border-left-width: 80px;border-right-width: 80px;border-bottom-width: 50px;}
+                    .head{font-size:60px;margin-bottom:10px;
+                        > span{font-size: 40px;}
+                        ~ *{font-size: 14px;text-align: justify;}
+                    }
+                }
+            }    
+        }
+    }
+}

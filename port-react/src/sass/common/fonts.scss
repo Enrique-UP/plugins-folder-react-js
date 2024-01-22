@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('../../fonts/fontello.eot');
+    src: url('../../fonts/fontello.eot?5923946#iefix') format('embedded-opentype'),
+         url('../../fonts/fontello.woff?5923946') format('woff'),
+         url('../../fonts/fontello.ttf?5923946') format('truetype'),
+         url('../../fonts/fontello.svg?5923946#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.icon {
+      font-family: "fontello";
+      font-style: normal;
+      font-weight: normal;
+      speak: never;
+      display: inline-block;
+      text-decoration: inherit;
+      text-align: center;
+      font-variant: normal;
+      text-transform: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+}

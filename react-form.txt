@@ -1,0 +1,15 @@
+for submit form to email id
+emailjs.com
+https://www.youtube.com/watch?v=I4DKr1JLC50
+https://www.emailjs.com/docs/examples/reactjs/
+npm i @emailjs/browser
+
+
+for validation
+npm i formik
+npm i yug
+https://www.youtube.com/watch?v=5QJQeqCUoFE
+
+
+
+

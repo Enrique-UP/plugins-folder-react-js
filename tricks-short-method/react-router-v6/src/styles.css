@@ -1,0 +1,13 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.page {
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.link {
+  padding: 16px;
+}
