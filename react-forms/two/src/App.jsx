@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./app.css";
 import FormInput from "./components/FormInput";
 
@@ -68,18 +68,27 @@ const App = () => {
   };
 
   const form = useRef();
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        e.target.reset();
-    
-        emailjs.sendForm('service_naawjgt', 'template_a4uikdp', form.current, 'pMOGs9W_LfCQfWE8N')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-          // e.target.reset();
-    };
+  const handleSubmit = (e) => {
+      e.preventDefault();
+      
+      emailjs.sendForm('service_naawjgt', 'template_a4uikdp', form.current, 'pMOGs9W_LfCQfWE8N')
+        .then((result) => {
+            console.log(result.text);
+            form.current.reset();
+            document.querySelectorAll(".formInput input").forEach((e) => {
+              e.setAttribute("focused", "false");
+            });
+        }, (error) => {
+            console.log(error.text);
+        });          
+  }; 
+
+  const handleClick = () => {
+    setValues('');
+    document.querySelectorAll(".formInput input").forEach((e) => {
+      e.setAttribute("focused", "false");
+    });
+  };    
 
   return (
     <div className="app">
@@ -93,7 +102,7 @@ const App = () => {
             onChange={onChange}
           />
         ))}
-        <button type="submit">Submit</button>
+        <button type="submit" onClick={handleClick}>Submit</button>
       </form>
     </div>
   );
