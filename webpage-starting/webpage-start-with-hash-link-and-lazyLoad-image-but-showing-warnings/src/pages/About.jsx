@@ -35,10 +35,10 @@ const About = () => {
                     </div>
                 </section>
                 <section className="image">
-                    <img data-src={img} />
+                    <img className="lazy" data-src={img} />
                 </section>
                 <section className="image">
-                    <div data-style={img}>Style</div>
+                    <div className="lazy" data-style={img}>Style</div>
                 </section>
                 <section id="abouthash">
                     <div className="container">

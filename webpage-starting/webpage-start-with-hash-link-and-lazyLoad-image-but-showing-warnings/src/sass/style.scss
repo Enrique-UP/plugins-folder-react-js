@@ -4,7 +4,6 @@ main{
     ul{position: fixed;bottom:0;left:0;background: #ccc;z-index: 9;margin: 0;
         a{color:#333;text-decoration: none;}
         .active{color:red;}
-        .notActive{color:#333;}
     }
     .container .row [class*="col"]{margin-bottom: 30px;}
     .container.active{background: brown;color: white;}
