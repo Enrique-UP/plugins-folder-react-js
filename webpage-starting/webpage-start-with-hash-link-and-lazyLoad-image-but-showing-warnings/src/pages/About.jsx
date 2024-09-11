@@ -40,7 +40,7 @@ const About = () => {
                 <section className="image">
                     <div className="lazy" data-style={img}>Style</div>
                 </section>
-                <section id="abouthash">
+                <section id="abouthash" className="abouthash">
                     <div className="container">
                         <div className="row">
                             <div className="col-xs-12">

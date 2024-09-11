@@ -1,5 +1,5 @@
 import {NavLink} from "react-router-dom";
-import { NavHashLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 import React from "react";
 import { useEffect } from "react";
 
@@ -15,8 +15,8 @@ const Header = () => {
         <>
             <ul>
                 <li><NavLink to="/" exact="true">Home</NavLink></li>
-                <li><NavHashLink to="/about" className="top">About Us</NavHashLink></li>
-                <li><NavHashLink className={({ isActive }) => (isActive ? "" : "")} to="/about#abouthash">Link to Hash Fragment</NavHashLink></li>
+                <li><NavLink to="/about" className="top">About Us</NavLink></li>
+                <li><HashLink to="/about#abouthash">Link to Hash Fragment</HashLink></li>
                 <li><NavLink to="/contact">Contact Us</NavLink></li>
                 <li><NavLink to="/lazyload">Lazy Load Image</NavLink></li>
                 <li><NavLink to="/content">Content Lazy Load</NavLink></li>
