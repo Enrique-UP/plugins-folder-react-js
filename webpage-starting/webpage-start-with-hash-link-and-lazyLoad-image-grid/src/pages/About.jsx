@@ -7,11 +7,11 @@ const About = () => {
                 <section id="top">
                     <div className="container">
                         <div className="row">
-                            <div className="col-xs-12">
+                            <div className="col-12">
                                 <div className="row">
-                                <div className="col-xs-12">
+                                <div className="col-12">
                                     <div className="row">
-                                        <div className="col-xs-12">About Us</div>
+                                        <div className="col-12">About Us</div>
                                     </div>
                                 </div>
                             </div>
@@ -22,11 +22,11 @@ const About = () => {
                 <section>
                     <div className="container">
                         <div className="row">
-                            <div className="col-xs-12">
+                            <div className="col-12">
                                 <div className="row">
-                                <div className="col-xs-12">
+                                <div className="col-12">
                                     <div className="row">
-                                        <div className="col-xs-12">About Us</div>
+                                        <div className="col-12">About Us</div>
                                     </div>
                                 </div>
                             </div>
@@ -43,11 +43,11 @@ const About = () => {
                 <section id="abouthash" className="abouthash">
                     <div className="container">
                         <div className="row">
-                            <div className="col-xs-12">
+                            <div className="col-12">
                                 <div className="row">
-                                <div className="col-xs-12">
+                                <div className="col-12">
                                     <div className="row">
-                                        <div className="col-xs-12">About Hash...</div>
+                                        <div className="col-12">About Hash...</div>
                                     </div>
                                 </div>
                             </div>

@@ -20,14 +20,14 @@ const Contact = () => {
                 <section>
                     <div className="container">
                         <div className="row">
-                            <div className="col-xs-12">
+                            <div className="col-12">
                                 <div className="row">
-                                <div className="col-xs-12">
+                                <div className="col-12">
                                     <div className="row">
-                                        <div className="col-xs-12" onClick={props.link}>
+                                        <div className="col-12" onClick={props.link}>
                                             <p>{props.text}</p>
                                         </div>
-                                        <div className="col-xs-12">
+                                        <div className="col-12">
                                             <a onClick={(e) => {e.target.closest(".container").classList.toggle("active")}}>{props.text} Click here...</a>
                                         </div>
                                     </div>

@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 const Reviews = () => {
     return(
         <>
-            {/*
+                {/*
                     https://swiperjs.com/react
                 */}
                 <Swiper modules={[Navigation, Autoplay]} autoplay={true} spaceBetween={30} slidesPerView={3} navigation breakpoints={
