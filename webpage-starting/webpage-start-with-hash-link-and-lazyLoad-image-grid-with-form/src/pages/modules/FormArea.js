@@ -29,7 +29,7 @@ const initialValues = {
   user_message: "",
 }
 
-function FormArea() {
+function FormReact() {
   const form = useRef();
 
   const formik = useFormik({
@@ -111,4 +111,4 @@ function FormArea() {
   );
 }
 
-export default FormArea;
+export default FormReact;

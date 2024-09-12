@@ -1,4 +1,5 @@
 import CustomScript from "./modules/CustomScript";
+import FormArea from "./modules/FormArea";
 const Contact = () => {
     const DataPropsdata = [
         {
@@ -42,6 +43,7 @@ const Contact = () => {
     }
     return(
         <>
+            <FormArea />
             <CustomScript>
                 {
                     DataPropsdata.map((val, KeyName) => {
