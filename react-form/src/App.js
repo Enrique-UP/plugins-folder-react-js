@@ -1,9 +1,9 @@
-import Basic from "./forms/Basic";
+import Form from "./modules/Form";
 
 const App = () => {
   return(
     <>
-      <Basic />
+      <Form />
     </>
   )
 }

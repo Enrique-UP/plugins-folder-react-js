@@ -4,7 +4,10 @@ import { useFormik } from "formik";
 import * as Yup from 'yup';
 
 const FormValidation = Yup.object({
-  user_name: Yup.string().min(3, "Name must be at least 3 characters long.").required("Please enter your name."),
+  user_name: Yup.string()
+    .matches(/^[A-Za-z\s]+$/, "Name should contain only alphabets.")  // Only alphabets and spaces
+    .min(3, "Name must be at least 3 characters long.")
+    .required("Please enter your name."),
   user_email: Yup.string()
     .email("Please enter a valid email address.")
     .matches(
@@ -18,7 +21,7 @@ const FormValidation = Yup.object({
   user_phone: Yup.string()
     .matches(/^[0-9]{3,20}$/, "Please enter a valid phone number.")
     .required("Please enter your phone number."),
-  user_message: Yup.string().min(10, "Message must be at least 10 characters long."),
+  user_message: Yup.string().min(2, "Message must be at least 2 characters long."),
 });
 
 const initialValues = {
@@ -29,7 +32,7 @@ const initialValues = {
   user_message: "",
 }
 
-function FormArea() {
+function Form() {
   const form = useRef();
 
   const formik = useFormik({
@@ -56,7 +59,7 @@ function FormArea() {
           value={formik.values.user_name} 
           onBlur={formik.handleBlur} 
           onChange={formik.handleChange} 
-          title="Name must be at least 3 characters."
+          title="Name must contain only alphabets."
         /><br />
         {formik.errors.user_name && formik.touched.user_name && <small>{formik.errors.user_name}</small>}<br />
 
@@ -111,4 +114,4 @@ function FormArea() {
   );
 }
 
-export default FormArea;
+export default Form;
